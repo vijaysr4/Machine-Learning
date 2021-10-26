@@ -6,6 +6,7 @@ import pandas as pd
 #importing dataset
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Decision Tree Classifier/Social_Network_Ads.csv')
 
+#splitting dependent and independent variables
 x = data_set.iloc[:,:-1].values
 y = data_set.iloc[:,-1].values
 
