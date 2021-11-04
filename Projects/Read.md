@@ -1,3 +1,3 @@
 # Applied Machine Learning
 
-This consists of applied ML projects in astrophysics data 
+This consists of applied ML projects with astrophysics data 
