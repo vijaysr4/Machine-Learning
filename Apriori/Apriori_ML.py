@@ -14,12 +14,12 @@ from apyori import apriori
 rules = apriori(transactions = transactions, min_support = 0.003, min_confidence = 0.2, min_lift = 3, min_length = 2, max_length = 2)
 
 
-#Visualising the results 
-#Displaying the first results coming directly from the output of the apriori function
+# Visualising the results 
+# Displaying the first results coming directly from the output of the apriori function
 results = list(rules)
 print(results)
 
-#Putting the results well organised into a pandas DataFrame
+# Putting the results well organised into a pandas DataFrame
 def inspect(results):
     lhs         = [tuple(result[2][0][0])[0] for result in results]
     rhs         = [tuple(result[2][0][1])[0] for result in results]
