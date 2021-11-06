@@ -29,9 +29,9 @@ def inspect(results):
     return list(zip(lhs, rhs, supports, confidences, lifts))
 resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left Hand Side', 'Right Hand Side', 'Support', 'Confidence', 'Lift'])
 
-#Displaying the results non sorted
+# Displaying the results non sorted
 print(resultsinDataFrame)
 
-#Displaying the results sorted by decending lifts
+# Displaying the results sorted by decending lifts
 rf = resultsinDataFrame.nlargest(n = 10, columns = 'Lift')
 print(rf)
