@@ -1,12 +1,12 @@
-#importing libraries
+# importing libraries
 import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-#importing dataset
+# importing dataset
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Decision Tree Classifier/Social_Network_Ads.csv')
 
-#splitting dependent and independent variables
+# splitting dependent and independent variables
 x = data_set.iloc[:,:-1].values
 y = data_set.iloc[:,-1].values
 
@@ -20,7 +20,7 @@ sc = StandardScaler()
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
-#Training Decision Tree classifier  model on the training set
+# Training Decision Tree classifier  model on the training set
 from sklearn.tree import DecisionTreeClassifier
 classifier = DecisionTreeClassifier(criterion = 'entropy', random_state = 0)
 classifier.fit(x_train, y_train)
