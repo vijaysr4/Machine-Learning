@@ -25,14 +25,14 @@ from sklearn.tree import DecisionTreeClassifier
 classifier = DecisionTreeClassifier(criterion = 'entropy', random_state = 0)
 classifier.fit(x_train, y_train)
 
-#predicting new results
+# Predicting new results
 print(classifier.predict(sc.transform([[30,87000]])))
 
-#predicting test results
+# Predicting test results
 y_pred = classifier.predict(x_test)
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test), 1)), 1))
 
-#Making the confusion matrix
+# Making the confusion matrix
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 print(cm)
