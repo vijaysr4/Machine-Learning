@@ -9,22 +9,22 @@ data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Support Vector Machine/Social_
 x = data_set.iloc[:,:-1].values
 y = data_set.iloc[:,-1].values
 
-#splitting datasets
+# Splitting datasets
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state=0)
 
-#feature scaling 
+# Feature scaling 
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
-#Training kernel SVM model on the training set
+# Training kernel SVM model on the training set
 from sklearn.svm import SVC
 classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(x_train, y_train)
 
-#predicting new results
+# Predicting new results
 print(classifier.predict(sc.transform([[30,87000]])))
 
 #predicting test results
