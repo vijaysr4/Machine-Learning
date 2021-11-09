@@ -27,17 +27,17 @@ classifier.fit(x_train, y_train)
 # Predicting new results
 print(classifier.predict(sc.transform([[30,87000]])))
 
-#predicting test results
+# Predicting test results
 y_pred = classifier.predict(x_test)
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test), 1)), 1))
 
-#Making the confusion matrix
+# Making the confusion matrix
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 print(cm)
 print(accuracy_score(y_test, y_pred)) 
 
-#Visulasing the training set results
+# Visulasing the training set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(x_train), y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 1),
@@ -65,7 +65,7 @@ plt.show()
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(x_test), y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 0.25),
-                     np.arange(start = X_set[:, 1].min() - 1000, stop = X_set[:, 1].max() + 1000, step =0.25))
+                     np.arange(start = X_set[:, 1].min() - 1000, stop = X_set[:, 1].max() + 1000, step = 0.25))
 plt.contourf(X1, X2, 
              classifier.predict(sc.transform(np.array([X1.ravel(), X2.ravel()]).T)).reshape(X1.shape),
              alpha = 0.75,
