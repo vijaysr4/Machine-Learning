@@ -1,15 +1,15 @@
-#importing libraries
+# Importing libraries
 import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-#importing dataset
+# Importing dataset
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Support Vector Machine/Social_Network_Ads.csv')
 
 x = data_set.iloc[:,:-1].values
 y = data_set.iloc[:,-1].values
 
-#splitting datasets
+# Splitting datasets
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state=0)
 
