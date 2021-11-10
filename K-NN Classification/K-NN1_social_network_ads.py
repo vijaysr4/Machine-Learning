@@ -25,7 +25,7 @@ classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
 classifier.fit(x_train, y_train)
 
 
-#predicting new results
+# Predicting new results
 print(classifier.predict(sc.transform([[30,87000]])))
 
 #predicting test results
