@@ -38,7 +38,7 @@ cm = confusion_matrix(y_test, y_pred)
 print(cm)
 print(accuracy_score(y_test, y_pred)) 
 
-#Visulasing the training set results
+# Visulasing the training set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(x_train), y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 1),
