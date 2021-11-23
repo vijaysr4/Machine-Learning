@@ -19,7 +19,7 @@ x = np.array(ct.fit_transform(x))
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state=0)
 
-#training simple linear regression model on the training set 
+# Training simple linear regression model on the training set 
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(x_train,y_train)
