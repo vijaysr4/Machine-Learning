@@ -9,7 +9,7 @@ data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Multiple Linear Regression/50_
 x = data_set.iloc[:,:-1].values
 y = data_set.iloc[:,-1].values
 
-#Encoding categorical data
+# Encoding categorical data
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [3])], remainder = 'passthrough')
