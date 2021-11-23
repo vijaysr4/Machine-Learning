@@ -15,7 +15,7 @@ from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [3])], remainder = 'passthrough')
 x = np.array(ct.fit_transform(x))
 
-#splitting datasets
+# Splitting datasets
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state=0)
 
