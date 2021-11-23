@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-#importing dataset
+# Importing dataset
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Multiple Linear Regression/50_Startups.csv')
 
 x = data_set.iloc[:,:-1].values
