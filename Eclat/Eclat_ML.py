@@ -17,7 +17,7 @@ rules = apriori(transactions = transactions, min_support = 0.003, min_confidence
 
 
 # Visualising the results 
-#Displaying the first results coming directly from the output of the apriori function
+# Displaying the first results coming directly from the output of the apriori function
 results = list(rules)
 print(results)
 
