@@ -16,7 +16,7 @@ from apyori import apriori
 rules = apriori(transactions = transactions, min_support = 0.003, min_confidence = 0.2, min_lift = 3, min_length = 2, max_length = 2)
 
 
-#Visualising the results 
+# Visualising the results 
 #Displaying the first results coming directly from the output of the apriori function
 results = list(rules)
 print(results)
