@@ -29,7 +29,7 @@ def inspect(results):
     return list(zip(lhs, rhs, supports))
 resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Product 1', 'Product 2', 'Support'])
 
-#Displaying the results sorted by decending Supports
+# Displaying the results sorted by decending Supports
 
 rf = resultsinDataFrame.nlargest(n = 10, columns = 'Support')
 print(rf)
