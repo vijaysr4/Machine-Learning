@@ -22,7 +22,7 @@ hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = '
 y_hc = hc.fit_predict(X)
 print(y_hc)
 
-#Visualising the clusters
+# Visualising the clusters
 plt.scatter(X[y_hc == 0,0], X[y_hc == 0, 1], s = 100, c = 'red', label = 'cluster 1')
 plt.scatter(X[y_hc == 1,0], X[y_hc == 1, 1], s = 100, c = 'blue', label = 'cluster 2')
 plt.scatter(X[y_hc == 2,0], X[y_hc == 2, 1], s = 100, c = 'green', label = 'cluster 3')
