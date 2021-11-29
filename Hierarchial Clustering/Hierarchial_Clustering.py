@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-#importing datasets
+# Importing datasets
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Hierarchial Clustering/Mall_Customers.csv')
 X = data_set.iloc[:, [3, 4]].values
 
