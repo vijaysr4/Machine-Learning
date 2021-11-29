@@ -7,7 +7,7 @@ import pandas as pd
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Hierarchial Clustering/Mall_Customers.csv')
 X = data_set.iloc[:, [3, 4]].values
 
-#Using the dendogram to find the optimal number of clusters
+# Using the dendogram to find the optimal number of clusters
 import scipy.cluster.hierarchy as sch
 dendrogram = sch.dendrogram(sch.linkage(X, method = 'ward'))
 plt.title('Dendrogram')
