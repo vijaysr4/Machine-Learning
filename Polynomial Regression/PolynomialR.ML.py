@@ -9,7 +9,7 @@ data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Polynomial Regression/Position
 x = data_set.iloc[:,1:-1].values
 y = data_set.iloc[:,-1].values
 
-#training simple linear regression model on the whole dataset
+# Training simple linear regression model on the whole dataset
 from sklearn.linear_model import LinearRegression
 Lin_reg = LinearRegression()
 Lin_reg.fit(x,y)
