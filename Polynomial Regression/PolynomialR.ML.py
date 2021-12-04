@@ -22,7 +22,7 @@ Lin_reg_2 = LinearRegression()
 Lin_reg_2.fit(x_poly, y)
 
 
-#visualising the linear regression results
+# Visualising the linear regression results
 plt.scatter(x, y, color='red') 
 plt.plot(x, Lin_reg.predict(x), color='blue') 
 plt.title("Polynomial Regression")
