@@ -48,7 +48,7 @@ plt.xlabel('Position level')
 plt.ylabel('Salary')
 plt.show()
 
-#predicting a single dependent variable with LR
+# Predicting a single dependent variable with LR
 LR_pred = Lin_reg.predict([[6.5]])
 print(LR_pred)
 
