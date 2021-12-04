@@ -38,7 +38,7 @@ plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show() 
 
-#visualising the polynomial regression results (High resolution & smoother curve)
+# Visualising the polynomial regression results (High resolution & smoother curve)
 x_grid = np.arange(min(x), max(x), 0.1)
 x_grid = x_grid.reshape((len(x_grid), 1))
 plt.scatter(x, y, color='red')
