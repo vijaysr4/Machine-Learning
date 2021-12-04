@@ -14,7 +14,7 @@ from sklearn.linear_model import LinearRegression
 Lin_reg = LinearRegression()
 Lin_reg.fit(x,y)
 
-#training polynomial regression model on the whole dataset
+# Training polynomial regression model on the whole dataset
 from sklearn.preprocessing import PolynomialFeatures
 poly_reg = PolynomialFeatures(degree = 4)
 x_poly = poly_reg.fit_transform(x)
