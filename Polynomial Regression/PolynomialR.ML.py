@@ -52,6 +52,6 @@ plt.show()
 LR_pred = Lin_reg.predict([[6.5]])
 print(LR_pred)
 
-#predicting a single dependent variable with PR
+# Predicting a single dependent variable with PR
 PR_pred = Lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
 print(PR_pred)
