@@ -30,7 +30,7 @@ plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show() 
 
-#visualising the polynomial regression results
+# Visualising the polynomial regression results
 plt.scatter(x, y, color='red') 
 plt.plot(x, Lin_reg_2.predict(poly_reg.fit_transform(x)), color='blue') 
 plt.title("Polynomial Regression")
