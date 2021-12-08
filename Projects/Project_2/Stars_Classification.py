@@ -16,7 +16,7 @@ import plotly_express as px
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-# start H2O
+# Start H2O
 import h2o
 from h2o.estimators import H2ORandomForestEstimator
 
