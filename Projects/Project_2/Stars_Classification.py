@@ -38,7 +38,7 @@ plt.title('Target (Type)')
 plt.grid()
 plt.show()
 
-#Numerical Features
+# Numerical Features
 
 features_num = ['Temperature', 'L', 'R', 'A_M']
 
