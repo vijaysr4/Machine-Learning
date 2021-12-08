@@ -55,7 +55,7 @@ for f in features_num:
     ax2.set_title(f + 'Boxplot')
     plt.show()
     
-#Pairwise scatter plot
+# Pairwise scatter plot
 sns.pairplot(data_set[features_num],
              kind = 'reg',
              plot_kws = {'line_kws':{'color':'magenta'},
