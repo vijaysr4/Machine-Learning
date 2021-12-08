@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-
 # Importing dataset
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Naive Bayes/Social_Network_Ads.csv')
 
