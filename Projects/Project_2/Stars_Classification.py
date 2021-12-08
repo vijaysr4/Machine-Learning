@@ -44,7 +44,7 @@ features_num = ['Temperature', 'L', 'R', 'A_M']
 
 data_set[features_num].describe(percentiles = [0.01, 0.1, 0.25, 0.5, 0.75, 0.9, 0.99])
 
-#plotting distribution (histogram + boxplot)
+# Plotting distribution (histogram + boxplot)
 for f in features_num:
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize = (11, 7), sharex = True)
     ax1.hist(data_set[f], bins = 20)
