@@ -29,7 +29,7 @@ display(data_set.head())
 data_set.info()
 
 
-#Target Distribution
+# Target Distribution
 print(data_set['Type'].value_counts())
 
 plt.figure(figsize = (8, 6))
