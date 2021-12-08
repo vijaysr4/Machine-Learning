@@ -20,7 +20,7 @@ from sklearn.decomposition import PCA
 import h2o
 from h2o.estimators import H2ORandomForestEstimator
 
-#Importing datasets
+# Importing datasets
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Projects/Project_2/Stars.csv')
 data_set.Type = data_set.Type.astype('category')
 
