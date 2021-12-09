@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
 
-# Importing dataset
+# Importing datasets
 data_set = pd.read_csv('C:/Users/vijay/Desktop/ML/Decision Tree Classifier/Social_Network_Ads.csv')
 
 # Splitting dependent and independent variables
