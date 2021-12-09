@@ -32,6 +32,6 @@ resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left Hand Side',
 # Displaying the results non sorted
 print(resultsinDataFrame)
 
-# Displaying the results sorted by decending lifts
+# Displaying the results sorted by decending lift
 rf = resultsinDataFrame.nlargest(n = 10, columns = 'Lift')
 print(rf)
