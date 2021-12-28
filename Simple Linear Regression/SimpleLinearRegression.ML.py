@@ -43,7 +43,7 @@ plt.xlabel("xx")
 plt.ylabel("yy")
 plt.show() 
 
-#test set visualization
+# Test set visualization
 plt.scatter(x_test, y_test, color='red') 
 plt.plot(x_test, regressor.predict(x_test), color='blue') 
 plt.title("SVM")
