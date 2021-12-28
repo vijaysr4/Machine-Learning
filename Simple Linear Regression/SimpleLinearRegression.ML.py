@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 dataset = pd.read_csv('C:/Users/vijay/Desktop/ML/Position_Salaries.csv')
 dataset.head()
 
-#splitting dependent and independent variables
+# Splitting dependent and independent variables
 x = dataset.iloc[:,:-1].values
 y = dataset.iloc[:,1].values
 dataset.drop(['Position'], axis = 1, inplace = True)
