@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 %matplotlib inline
 
-#importing datasets
+# Importing datasets
 dataset = pd.read_csv('C:/Users/vijay/Desktop/ML/Position_Salaries.csv')
 dataset.head()
 
