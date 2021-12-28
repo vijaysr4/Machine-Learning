@@ -35,7 +35,7 @@ y_pred = regressor.predict(x_test)
 print('Train Score:', regressor.score(x_train,y_train))
 print('Test Score:', regressor.score(x_test,y_test))
 
-#training set visualization
+# Training set visualization
 plt.scatter(x_train, y_train, color='red') 
 plt.plot(x_train, regressor.predict(x_train), color='blue') 
 plt.title("SVM")
