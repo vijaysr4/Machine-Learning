@@ -18,7 +18,7 @@ dataset.drop(['Position'], axis = 1, inplace = True)
 print(x)
 print(y)
 
-#splitting test and train datasets
+# Splitting test and train datasets
 pred = dataset.drop("Salary",axis = 1)
 tar = dataset["Salary"]
 x_train,x_test,y_train,y_test = train_test_split(pred,tar,test_size = 0.2,random_state = 0)
